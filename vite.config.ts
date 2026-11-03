@@ -4,4 +4,12 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build:{
+    rollupOptions: {
+      input: {
+        index: "index.html",
+        hello_world: "hello-world.html"
+      }
+    }
+  }
 })
