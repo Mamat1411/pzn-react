@@ -1,4 +1,4 @@
-type ToDoProps = {
+export type ToDoProps = {
     text: string;
     isCompleted: boolean;
     isDeleted?: boolean;
