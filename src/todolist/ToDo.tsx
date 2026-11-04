@@ -11,13 +11,11 @@ export default function ToDo({
 }: ToDoProps) {
     if (isDeleted) {
         return null
-    } else if (!isCompleted) {
-        return <li>{text}</li>;
     }
-    
+
     return (
         <li>
-            <del>{text}</del>
+            {isCompleted ? <del>{text}</del> : text}
         </li>
     );
 }
