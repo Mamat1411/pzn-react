@@ -15,7 +15,7 @@ export default function ToDo({
 
     return (
         <li>
-            {isCompleted ? <del>{text}</del> : text}
+            {text} {isCompleted && '✅'}
         </li>
     );
 }
