@@ -1,7 +1,10 @@
 export default function HelloWorld() {
+    const props = {
+        text: "Hello World"
+    }
     return (
         <div>
-            <HeaderHelloWorld text="Hello World"/>
+            <HeaderHelloWorld {...props}/>
             <ParagraphHelloWorld/>
         </div>
     )
