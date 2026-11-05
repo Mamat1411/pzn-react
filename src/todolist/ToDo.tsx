@@ -1,4 +1,5 @@
 export type ToDoProps = {
+    id: number|string;
     text: string;
     isCompleted: boolean;
     isDeleted?: boolean;
