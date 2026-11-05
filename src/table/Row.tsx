@@ -1,10 +1,12 @@
-let counter: number = 0;
+type RowProps = {
+    id: string | number;
+    text: string;
+}
 
-export default function Row({text}: {text: string}) {
-    counter++;
+export default function Row({id, text}: RowProps) {
     return (
         <tr>
-            <td>{counter}</td>
+            <td>{id}</td>
             <td>{text}</td>
         </tr>
     )
