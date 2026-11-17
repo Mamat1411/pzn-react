@@ -4,7 +4,8 @@ type AlertProps = {
 }
 
 export default function AlertButton({text, message}: AlertProps) {
-    function handleClick() {
+    function handleClick(e: object) {
+        console.info(e);
         alert(message);
     }
 
