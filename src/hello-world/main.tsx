@@ -7,6 +7,7 @@ import Table from "../table/Table";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
+import SearchForm from "../forms/SearchForm";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -23,6 +24,8 @@ createRoot(document.getElementById("root")!).render(
                 e.stopPropagation();
                 alert("You clicked Toolbar");
             }} />
+
+            <SearchForm />
         </Container>
     </StrictMode>
 )
